@@ -1,0 +1,17 @@
+/* CSS Color Palette
+ --almond: #f1dac4ff;
+--rose-quartz: #a69cacff;
+--ultra-violet: #474973ff;
+--oxford-blue: #161b33ff;
+--rich-black: #0d0c1dff; */
+
+.Banner{
+    text-align: center;
+    color: #0d0c1d;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #F1DAC4;
+    border: 1px solid #0d0c1d;
+    border-radius: 3rem;
+
+}

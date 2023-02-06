@@ -1,0 +1,37 @@
+/* CSS Color Palette
+ --almond: #f1dac4ff;
+--rose-quartz: #a69cacff;
+--ultra-violet: #474973ff;
+--oxford-blue: #161b33ff;
+--rich-black: #0d0c1dff; */
+
+.TabsContainer {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin:1rem;
+  }
+
+  .Tabs {
+    display:flex;
+    border-bottom:1px solid #0d0c1dff;
+    
+  }
+  .tab {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-right: 1px solid #0d0c1dff;
+  }
+
+  .tab.active {
+    border-right: none;
+  }
+
+  .tab:last-child {
+    border-right: none;
+  }
+
+  .TabsContent {
+    font-size: large;
+    font-style:italic;
+  }

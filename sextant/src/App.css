@@ -1,5 +1,13 @@
+/* CSS Color Palette
+ --almond: #f1dac4ff;
+--rose-quartz: #a69cacff;
+--ultra-violet: #474973ff;
+--oxford-blue: #161b33ff;
+--rich-black: #0d0c1dff; */
+
 .App {
   text-align: center;
+  background-color:#474973ff;
 }
 
 .App-logo {
@@ -35,4 +43,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Exhibits {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }

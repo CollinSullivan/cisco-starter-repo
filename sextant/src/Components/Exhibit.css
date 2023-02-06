@@ -1,0 +1,39 @@
+/* CSS Color Palette
+ --almond: #f1dac4ff;
+--rose-quartz: #a69cacff;
+--ultra-violet: #474973ff;
+--oxford-blue: #161b33ff;
+--rich-black: #0d0c1dff; */
+
+
+.Exhibit {
+    width:30%;
+    text-align: center;
+    padding:1rem;
+    background-color: #a69cacff;
+    border: 2px solid #0d0c1dff;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    order: 3;
+  }
+
+  .ExhibitTitle {
+    vertical-align: text-top;
+    color: #0d0c1dff;
+    font-size: 2rem;
+    margin: .5rem;
+  }
+
+  .ExhibitContent {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  hr {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: .25rem;
+    background-color: #474973ff;
+    border: none;
+ }
