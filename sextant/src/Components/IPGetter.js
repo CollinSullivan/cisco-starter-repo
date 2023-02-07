@@ -1,26 +1,33 @@
 import React, {Component} from 'react';
-import './IPGetter.css';
+
 
 class IPGetter extends Component {
-    state = {
-        isIPv6:this.props.isIPv6,
-        title: isIPv6 ? "IPv6" : "IPv4",
-    }
-
-      
-      <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-    })
-
-    render() {
-        return (
-      <div className="Exhibit">
-        <h2 className="ExhibitTitle">{this.props.title}</h2>
-        <hr />
-        <div className="ExhibitContent">{this.props.children}</div>
-      </div>
-    );
+  constructor(props){
+    super(props);
+    this.state = {
+      ipAddress:'',
+      title:props.isIPv6 ? "IPv6" : "IPv4",
+  }
   }
 
-   
+  componentDidMount(){
+    const API_URL = this.props.isIPv6 ? 'https://api64.ipify.org?format=json' : 'https://api.ipify.org?format=json'
+    fetch(API_URL)
+    .then(res => res.json())
+    .then(data => {
+                    this.setState({ipAddress: data.ip});
+                    console.log(data.ip);
+    })
+  }
+
+
+
+  render(){
+    return(
+      <div>
+        <p>{this.state.ipAddress}</p>
+      </div>
+    )
+ }
 }
 export default IPGetter;
