@@ -16,7 +16,6 @@ class IPGetter extends Component {
     .then(res => res.json())
     .then(data => {
                     this.setState({ipAddress: data.ip});
-                    console.log(data.ip);
     })
   }
 
