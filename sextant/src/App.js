@@ -3,6 +3,7 @@ import Tabs from './Components/Tabs';
 import Banner from './Components/Banner';
 import Exhibit from './Components/Exhibit';
 import IPGetter from './Components/IPGetter';
+import LatencyDisplay from './Components/LatencyDisplay';
 
 function App() {
 //   let tabList = ["Line", "Paragraph", "Multiple Paragraphs"]
@@ -27,6 +28,10 @@ function App() {
           children={<Tabs 
                       tabs={["IPv4","IPv6"]} 
                       children={[<IPGetter isIPv6={false} key={0}/>, <IPGetter isIPv6={true} key={1}/>]}/>}
+        />
+        <Exhibit
+          title="Latency"
+          children={<LatencyDisplay url='ws://localhost:55455'/>}
         />
       </div>
     </div>

@@ -5,7 +5,12 @@
 --oxford-blue: #161b33ff;
 --rich-black: #0d0c1dff; */
 
+body{
+  background-color:#474973ff;
+}
+
 .App {
+  display:flexbox;
   text-align: center;
   background-color:#474973ff;
 }

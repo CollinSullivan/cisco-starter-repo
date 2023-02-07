@@ -14,11 +14,13 @@
 
   .Tabs {
     display:flex;
+    justify-content: space-evenly;
     border-bottom:1px solid #0d0c1dff;
     
   }
   .tab {
     cursor: pointer;
+    align-content: center;
     padding: 0.5rem 1rem;
     border-right: 1px solid #0d0c1dff;
   }
